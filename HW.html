@@ -1,263 +1,158 @@
-<!-- <head>
-<style>
-    table
-    {
-    
-    }
-    tr:nth-child(even){
-        background-color: red;
-    }
-    td:nth-child(even){
-        background-color: yellow;
-    }
-a:link {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  mix-blend-mode: multiply ;
-  background-color: orange;
-  text-decoration: underline;
-}
-
-a:active {
-  color: ;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-</head>
-<body>
-    <table border="1">
-        
-        <tr>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-        </tr>
-        <tr>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-        </tr>
-        <tr>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-        </tr>
-        <tr>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-            <td><a href="">1</a></td>
-        </tr>
-    </table>
-    
-</body> -->
-<!-- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-  }
-  
-  th, td {
-    border: 1px solid #fe0101;
-    padding: 12px;
-    text-align: center;
-  }
-
-  th {
-    background-color: #10e44c;
-  }
-
-  /* تأثير عند مرور الماوس على الصف */
-  tr.clickable-row {
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  tr.clickable-row:hover {
-    background-color: #900fda; /* تغيير اللون عند التمرير */
-  }
-</style>
-</head>
-<body>
-
-<h2>جدول بصفوف قابلة للنقر (4 صفوف × 5 أعمدة)</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>العنوان 1</th>
-      <th>العنوان 2</th>
-      <th>العنوان 3</th>
-      <th>العنوان 4</th>
-      <th>العنوان 5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="clickable-row" onclick="window.location='https://www.google.com';">
-      <td>بيانات 1-1</td>
-      <td>بيانات 1-2</td>
-      <td>بيانات 1-3</td>
-      <td>بيانات 1-4</td>
-      <td>بيانات 1-5</td>
-    </tr>
-    
-    <tr class="clickable-row" onclick="window.location='https://www.wikipedia.org';">
-      <td>بيانات 2-1</td>
-      <td>بيانات 2-2</td>
-      <td>بيانات 2-3</td>
-      <td>بيانات 2-4</td>
-      <td>بيانات 2-5</td>
-    </tr>
-    
-    <tr class="clickable-row" onclick="window.location='https://www.youtube.com';">
-      <td>بيانات 3-1</td>
-      <td>بيانات 3-2</td>
-      <td>بيانات 3-3</td>
-      <td>بيانات 3-4</td>
-      <td>بيانات 3-5</td>
-    </tr>
-    
-    <tr class="clickable-row" onclick="window.location='https://www.github.com';">
-      <td>بيانات 4-1</td>
-      <td>بيانات 4-2</td>
-      <td>بيانات 4-3</td>
-      <td>بيانات 4-4</td>
-      <td>بيانات 4-5</td>
-    </tr>
-  </tbody>
-</table>
-
-<p style="margin-top: 20px;">* ملاحظة: عند النقر على أي مكان داخل الصف، سيتم توجيهك للرابط المحدد في كود JavaScript.</p>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-  table 
-  {
-    background-color: white;
-    margin: 20px auto;
-  }
+  <style>
+    table {
+      background-color: white;
+      margin: 20px auto;
+    }
 
-  td {
-    width: 60px;
-    height: 90px;
-    border: 2px solid #555;
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-family: serif;
-    color: rgb(59, 174, 223);
-    font-weight: bold;
-    overflow: hidden;
-  }
+    td {
+      width: 60px;
+      height: 90px;
+      border: 2px solid #555;
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      font-family: serif;
+      color: rgb(59, 174, 223);
+      font-weight: bold;
+      overflow: hidden;
+    }
 
-  td::before, td::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: 1;
-  }
+    td::before,
+    td::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
 
-  /* 1. تلوين الصفوف الزوجية بالأحمر باستخدام nth-child */
-  tr:nth-child(even) td::before {
-    background-color: rgb(11, 230, 19); /* أحمر */
-  }
+    tr:nth-child(even) td::before {
+      background-color: rgb(11, 230, 19);
+    }
 
-  /* 2. تلوين الأعمدة الزوجية بالأصفر باستخدام nth-child */
-  td:nth-child(even)::after {
-    background-color: rgb(174, 0, 255); /* أصفر */
-    
-    /* -------------------------------------------------- */
-    /* السطر السحري: مزج اللون الأصفر مع ما تحته (الأحمر) */
-    mix-blend-mode: multiply; 
-    /* -------------------------------------------------- */
-  }
+    td:nth-child(even)::after {
+      background-color: rgb(174, 0, 255);
 
-  /* لجعل الرقم يظهر دائماً في المقدمة */
-  .content {
-    position: relative;
-    z-index: 10;
-  }
+      mix-blend-mode: multiply;
+    }
 
-  /* تأثير عند المرور بالماوس (اختياري كما في الطريقة 2) */
-  tr.clickable-row { cursor: pointer; }
-  tr:hover { filter: brightness(0.9); }
-</style>
+    .content {
+      position: relative;
+      z-index: 10;
+    }
+
+    tr.clickable-row {
+      cursor: pointer;
+    }
+
+    tr:hover {
+      filter: brightness(0.9);
+    }
+  </style>
 </head>
+
 <body>
 
-<table border="1">
-  <tr class="clickable-row" onclick="window.location='https://www.google.com';">
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-  </tr>
-  <tr class="clickable-row" onclick="window.location='#';">
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-  </tr>
-  <tr class="clickable-row" onclick="window.location='#';">
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-  </tr>
-  <tr class="clickable-row" onclick="window.location='#';">
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-    <td><div class="content">1</div></td>
-  </tr>
-</table>
-
+  <table border="1">
+    <tr class="clickable-row" onclick="window.location='www.ju.edu.jo';">
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+    </tr>
+    <tr class="clickable-row" onclick="window.location='#';">
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+    </tr>
+    <tr class="clickable-row" onclick="window.location='#';">
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+    </tr>
+    <tr class="clickable-row" onclick="window.location='#';">
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+      <td>
+        <div class="content">1</div>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
