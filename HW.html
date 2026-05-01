@@ -1,158 +1,93 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <style>
-    table {
-      background-color: white;
-      margin: 20px auto;
-    }
+<style>
+  table 
+  {
+    background-color: white;
+    margin: 20px auto;
+  }
 
-    td {
-      width: 60px;
-      height: 90px;
-      border: 2px solid #555;
-      position: relative;
-      text-align: center;
-      font-size: 40px;
-      font-family: serif;
-      color: rgb(59, 174, 223);
-      font-weight: bold;
-      overflow: hidden;
-    }
+  td {
+    width: 60px;
+    height: 90px;
+    border: 2px solid #555;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    color: rgb(59, 174, 223);
+    font-weight: bold;
+    overflow: hidden;
+  }
 
-    td::before,
-    td::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
+  td::before, td::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+  }
 
-    tr:nth-child(even) td::before {
-      background-color: rgb(11, 230, 19);
-    }
+  tr:nth-child(even) td::before {
+    background-color: rgb(11, 230, 19);
+  }
 
-    td:nth-child(even)::after {
-      background-color: rgb(174, 0, 255);
+  td:nth-child(even)::after {
+    background-color: rgb(174, 0, 255);
+    
+    mix-blend-mode: multiply; 
+  }
 
-      mix-blend-mode: multiply;
-    }
+  .content {
+    position: relative;
+    z-index: 10;
+  }
 
-    .content {
-      position: relative;
-      z-index: 10;
-    }
-
-    tr.clickable-row {
-      cursor: pointer;
-    }
-
-    tr:hover {
-      filter: brightness(0.9);
-    }
-  </style>
+  tr.clickable-row { cursor: pointer; }
+  tr:hover { filter: brightness(0.9); }
+</style>
 </head>
-
 <body>
 
-  <table border="1">
-    <tr class="clickable-row" onclick="window.location='www.ju.edu.jo';">
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-    </tr>
-    <tr class="clickable-row" onclick="window.location='#';">
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-    </tr>
-    <tr class="clickable-row" onclick="window.location='#';">
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-    </tr>
-    <tr class="clickable-row" onclick="window.location='#';">
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-      <td>
-        <div class="content">1</div>
-      </td>
-    </tr>
-  </table>
-</body>
+<table border="1">
+  <tr class="clickable-row" onclick="window.location='https://www.ju.edu.jo';">
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+  </tr>
+  <tr class="clickable-row" onclick="window.location='#';">
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+  </tr>
+  <tr class="clickable-row" onclick="window.location='#';">
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+  </tr>
+  <tr class="clickable-row" onclick="window.location='#';">
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+    <td><div class="content">1</div></td>
+  </tr>
+</table>
 
+</body>
 </html>
