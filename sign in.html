@@ -12,18 +12,13 @@
   <link rel="stylesheet" href="sign in.css" />
 </head>
 <body>
-
-  <!-- جزيئات الخلفية المتحركة -->
   <div class="bg-particles">
     <div class="particle p1"></div>
     <div class="particle p2"></div>
     <div class="particle p3"></div>
   </div>
-
   <main class="container">
     <div class="form-card">
-
-      <!-- رأس الصفحة -->
       <div class="form-header">
         <div class="icon-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -34,8 +29,6 @@
         <h1>تسجيل دخول</h1>
         <p class="subtitle">أدخل بياناتك</p>
       </div>
-
-      <!-- شريط اكتمال البيانات -->
       <div class="progress-bar-container">
         <div class="progress-label">
           <span>اكتمال النموذج</span>
@@ -45,11 +38,7 @@
           <div class="progress-fill" id="progress-fill"></div>
         </div>
       </div>
-
-      <!-- النموذج (Form) -->
       <form id="registration-form" novalidate>
-
-        <!-- الحقل 1: الاسم الكامل -->
         <div class="field-group" id="group-name">
           <label for="full-name">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -70,8 +59,6 @@
           </div>
           <span class="error-msg" id="err-name">يرجى إدخال اسمك الكامل (3 أحرف على الأقل)</span>
         </div>
-
-        <!-- الحقل 2: البريد الإلكتروني -->
         <div class="field-group" id="group-email">
           <label for="email">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -92,8 +79,6 @@
           </div>
           <span class="error-msg" id="err-email">يرجى إدخال بريد إلكتروني صحيح</span>
         </div>
-
-        <!-- الحقل 3: رقم الهاتف -->
         <div class="field-group" id="group-phone">
           <label for="phone">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -110,10 +95,8 @@
               </svg>
             </div>
           </div>
-          <span class="error-msg" id="err-phone">يرجى إدخال رقم هاتف صحيح (مثال: 0512345678)</span>
+          <span class="error-msg" id="err-phone">يرجى إدخال رقم هاتف صحيح (مثال: 78xxxxxxx)</span>
         </div>
-
-        <!-- الحقل 4: العمر -->
         <div class="field-group" id="group-age">
           <label for="age">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -138,8 +121,6 @@
           </div>
           <span class="error-msg" id="err-age">يرجى إدخال عمر صحيح (بين 1 و 120 سنة)</span>
         </div>
-
-        <!-- الحقل 5: المدينة -->
         <div class="field-group" id="group-city">
           <label for="city">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -166,8 +147,6 @@
           </div>
           <span class="error-msg" id="err-city">يرجى اختيار مدينتك</span>
         </div>
-
-        <!-- زر الإرسال -->
         <button type="submit" id="submit-btn" class="submit-btn">
           <span class="btn-text">الذهاب للصفحة التالية</span>
           <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -179,21 +158,6 @@
       </form>
     </div>
   </main>
-
-  <!-- نافذة النجاح المنبثقة -->
-  <div class="modal-overlay" id="success-modal">
-    <div class="modal-card">
-      <div class="modal-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-      </div>
-      <h2>تم بنجاح! 🎉</h2>
-      <p>تم استلام بياناتك بنجاح. سنتواصل معك قريباً.</p>
-      <button id="modal-close" class="modal-btn">حسناً، شكراً!</button>
-    </div>
-  </div>
-
   <script src="sign in.js"></script>
 </body>
 </html>
