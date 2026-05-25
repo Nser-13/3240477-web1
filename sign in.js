@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('registration-form');
-  const successModal = document.getElementById('success-modal');
   const modalCloseBtn = document.getElementById('modal-close');
   const progressFill = document.getElementById('progress-fill');
   const progressPercent = document.getElementById('progress-percent');
 
-  // تعريف الحقول وقواعد التحقق الخاصة بكل حقل
   const fields = {
     name: {
       el: document.getElementById('full-name'),
@@ -48,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // التحقق من صحة حقل معين وتحديث المظهر
   function validateField(key, showErrors = true) {
     const field = fields[key];
     const isValid = field.validate(field.el.value);
@@ -70,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // تحديث شريط تقدم تعبئة النموذج
   function updateProgress() {
     let validCount = 0;
     const totalFields = Object.keys(fields).length;
@@ -86,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
     progressPercent.textContent = `${percentage}%`;
   }
 
-  // ربط الأحداث للحقول للتفاعل اللحظي
   Object.keys(fields).forEach((key) => {
     const field = fields[key];
 
@@ -104,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // معالجة إرسال النموذج
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     let isFormValid = true;
@@ -117,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (isFormValid) {
-    // ✅ حفظ البيانات في localStorage
     const formData = {
       name:  fields.name.el.value.trim(),
       email: fields.email.el.value.trim(),
@@ -126,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
       city:  fields.city.el.value
     };
     localStorage.setItem('userData', JSON.stringify(formData));
-    // ✅ الانتقال للصفحة التالية
     window.location.href = 'AL-hennawi GOLDEN PIANT.html';
   }
   });
