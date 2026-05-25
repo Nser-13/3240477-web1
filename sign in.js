@@ -117,18 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (isFormValid) {
-      successModal.classList.add('active');
-    }
-  });
-
-  // إغلاق النافذة المنبثقة وإعادة تعيين النموذج
-  modalCloseBtn.addEventListener('click', () => {
-    successModal.classList.remove('active');
-    form.reset();
-    Object.keys(fields).forEach((key) => {
-      fields[key].group.classList.remove('success', 'error');
-      fields[key].errEl.style.display = 'none';
-    });
-    updateProgress();
+    // ✅ حفظ البيانات في localStorage
+    const formData = {
+      name:  fields.name.el.value.trim(),
+      email: fields.email.el.value.trim(),
+      phone: fields.phone.el.value.trim(),
+      age:   fields.age.el.value.trim(),
+      city:  fields.city.el.value
+    };
+    localStorage.setItem('userData', JSON.stringify(formData));
+    // ✅ الانتقال للصفحة التالية
+    window.location.href = 'AL-hennawi GOLDEN PIANT.html';
+  }
   });
 });
