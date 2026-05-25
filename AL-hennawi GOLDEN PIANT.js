@@ -43,3 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('الملف غير متاح أو غير مدعوم. يرجى اختيار ملف آخر.');
     });
 });
+const userData = JSON.parse(localStorage.getItem('userData'));
+if (userData) {
+  console.log('الاسم:', userData.name);
+  console.log('الإيميل:', userData.email);
+  console.log('الهاتف:', userData.phone);
+  console.log('العمر:', userData.age);
+  console.log('المدينة:', userData.city);
+}
