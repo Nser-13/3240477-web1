@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="sign in.css" />
 </head>
 <body>
+  <!-- تأثيرات خلفية-->
   <div class="bg-particles">
     <div class="particle p1"></div>
     <div class="particle p2"></div>
@@ -20,6 +21,7 @@
   <main class="container">
     <div class="form-card">
       <div class="form-header">
+        <!--رسم صوره anonymous-->
         <div class="icon-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -29,6 +31,7 @@
         <h1>تسجيل دخول</h1>
         <p class="subtitle">أدخل بياناتك</p>
       </div>
+      <!--bar اكتمال النوذج-->
       <div class="progress-bar-container">
         <div class="progress-label">
           <span>اكتمال النموذج</span>
@@ -39,8 +42,10 @@
         </div>
       </div>
       <form id="registration-form" novalidate>
+        <!--الخانه 1-->
         <div class="field-group" id="group-name">
           <label for="full-name">
+            <!--رسم صوره anonymous-->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
               <circle cx="12" cy="7" r="4"/>
@@ -57,8 +62,10 @@
               </svg>
             </div>
           </div>
+          <!--جمله error-->
           <span class="error-msg" id="err-name">يرجى إدخال اسمك الكامل (3 أحرف على الأقل)</span>
         </div>
+        <!--الخانه 2-->
         <div class="field-group" id="group-email">
           <label for="email">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -77,8 +84,10 @@
               </svg>
             </div>
           </div>
+          <!--جمله error-->
           <span class="error-msg" id="err-email">يرجى إدخال بريد إلكتروني صحيح</span>
         </div>
+        <!--الخانه 3-->
         <div class="field-group" id="group-phone">
           <label for="phone">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,8 +104,9 @@
               </svg>
             </div>
           </div>
-          <span class="error-msg" id="err-phone">يرجى إدخال رقم هاتف صحيح (مثال: 78xxxxxxx)</span>
+          <span class="error-msg" id="err-phone">يرجى إدخال رقم هاتف صحيح (مثال: 78xxxxxxx)</span><!--جمله error-->
         </div>
+        <!--الخانه 4-->
         <div class="field-group" id="group-age">
           <label for="age">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -119,8 +129,9 @@
               </svg>
             </div>
           </div>
-          <span class="error-msg" id="err-age">يرجى إدخال عمر صحيح (بين 1 و 120 سنة)</span>
+          <span class="error-msg" id="err-age">يرجى إدخال عمر صحيح (بين 1 و 120 سنة)</span><!--جمله error-->
         </div>
+        <!--الخانه 5-->
         <div class="field-group" id="group-city">
           <label for="city">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -145,7 +156,7 @@
               </svg>
             </div>
           </div>
-          <span class="error-msg" id="err-city">يرجى اختيار مدينتك</span>
+          <span class="error-msg" id="err-city">يرجى اختيار مدينتك</span><!--جمله error-->
         </div>
         <button type="submit" id="submit-btn" class="submit-btn">
           <span class="btn-text">الذهاب للصفحة التالية</span>
