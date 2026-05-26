@@ -1,9 +1,8 @@
+//لا تشغل كود جافا سكريبت هذا إلا بعد تحميل الصفحة بالكامل
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('registration-form');
-  const modalCloseBtn = document.getElementById('modal-close');
   const progressFill = document.getElementById('progress-fill');
   const progressPercent = document.getElementById('progress-percent');
-
   const fields = {
     name: {
       el: document.getElementById('full-name'),
